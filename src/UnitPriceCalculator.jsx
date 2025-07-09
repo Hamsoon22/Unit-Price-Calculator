@@ -74,6 +74,7 @@ export default function UnitPriceCalculator() {
 
       <div className="bg-gray-100 p-4 rounded-lg space-y-2">
       <p>💸 1개당 원가: <strong>{Math.round(unitCost).toLocaleString()}원</strong></p>
+      <p>🧾 총 비용 (원가 합계): <strong>{Math.round(totalCost).toLocaleString()}원</strong></p> {/* ✅ 추가된 줄 */}
       <p>➕ 1개당 순수익 (판매가 - 원가, VAT 제외): <strong>{Math.round(netSellingPrice - unitCost).toLocaleString()}원</strong></p>
       <p>📦 손익분기점 판매 개수: <strong>{unitsToBreakEven}개</strong></p>
       <p>💰 예상 총 매출 (VAT 제외): <strong>{Math.round(estimatedTotalRevenue).toLocaleString()}원</strong></p>
